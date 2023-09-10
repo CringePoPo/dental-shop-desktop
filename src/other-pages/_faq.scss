@@ -1,0 +1,65 @@
+@use '../abstracts/' as *;
+
+main{
+    .banner-title{
+        background-color: #027DB6;
+        padding: 25px;
+        p{
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+    .banner-content{
+
+        background-color: $bg-banner-clr;
+        .faq-info-wrapper{
+            height: 304px;
+            display: flex;
+            justify-content: space-around;
+            .faq-info{
+                width: 600px;
+                padding: 30px;
+                p{
+                    color: $txt-clr;
+                    font-size: 20px;
+                }
+            }
+            .live-chat-img{
+                position: relative;
+                width: 10%;
+                img{
+                    position: absolute;
+                    top: -81px;
+                    width: 300px;
+                    height: 400px;
+                }
+                .chat-txt{
+                    position: 
+                    absolute;
+                    bottom: 10px;
+                    left: -40px;
+                    display: flex;
+                    background-color: $bg-clr;
+                    color: white;
+                    padding: 15px 35px;
+                    border-radius: 10px;
+                    p{
+                        padding-left: 10px;
+                        font-size: 20px;
+                    }
+                    span{
+                        padding: 25px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        color: #fff;
+                        position: absolute;
+                        left: -30px;
+                        top: -4px;
+                        box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.38);
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

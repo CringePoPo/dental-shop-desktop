@@ -1,0 +1,302 @@
+@use '../abstracts/' as *;
+
+// Helper 
+.fa-outline {
+    border: 2px solid $bg-footer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.text-right{
+    text-align: right !important;
+}
+.total{
+    font-size: 20px !important;
+    padding-top: 20px !important;
+}
+select{
+    position: relative;
+    --webkit-appearance:none;
+    appearance: none;
+    background: linear-gradient(45deg,transparent 40%,$txt-clr 50%) no-repeat top 21px right 30px/6px 5px,linear-gradient(135deg,$txt-clr 50%,transparent 60%) no-repeat top 21px right 25px/6px 5px;
+    border-radius: 5px ;
+    padding-left: 16px;
+    border: 2px solid $bg-footer;
+    font-size: 1rem !important;
+    height: 48px;
+    &::after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 3px;
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #333;
+    }
+}
+.fa-trash{
+    color: $txt-clr;
+}
+main{
+    .cart-container{
+    
+        .deal-banner{
+            padding: 20px !important;
+            background-color: transparent;
+            border-bottom: 2px solid $bg-clr;
+            p:first-child{
+                color: #000;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+    .cart-item-container{
+        display: flex;
+        gap: 15px;
+    }
+    .total-items{
+        border-bottom: 2px solid $bg-clr;
+        padding: 15px 0;
+        margin-bottom: 15px;
+        width: 1025px;
+    }
+    .cart-left{
+        .cart-items{
+        width: 1025px;
+        margin: 15px 0;
+        
+        .cart-item{
+                border-bottom: 2px solid $bg-clr;
+                padding-bottom: 15px;
+                margin-top: 15px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                color: $txt-clr;
+                img{
+                    border: 2px solid $bg-footer;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+                .cart-data{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 560px;
+                    .product-name{
+                        font-size: 24px;
+                    }
+                    .product-brand{
+                        margin-top: 15px;
+                        span a{
+                            color: $bg-clr;
+                            text-decoration: none;
+                        }
+                    }
+                    .quantity{
+                        display: flex;
+                        gap: 15px;
+                        align-items: center;
+                        margin-top: 30px;
+                        &-wrapper{
+                            display: flex;
+                            gap: 5px;
+                            border: 2px solid $txt-clr;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+
+                        }
+                    }
+                }
+                .actions{
+                    display:flex;
+                    gap: 45px;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 160px;
+                    .discount-badge{
+                        width: 160px;
+                        position: static;
+                    }
+                   
+                    .action-button{
+                        border: 2px solid $txt-clr;
+                        padding:8px 12px;
+                        border-radius: 10px;
+                        background-color: #fff;
+                        align-self: flex-end;
+
+                    }
+                }
+            }
+        }
+    }
+    .card-right{
+        width: 400px;
+
+        .delivery-container{
+            .delivery-info-wrapper{
+                padding: 15px 10px;
+                border-left: 2px solid $txt-clr;
+                border-right: 2px solid $txt-clr;
+                border-bottom: 2px solid $txt-clr;
+            }
+            .delivery-title{
+                padding: 15px 10px;
+                background-color: $bg-banner-clr;
+                font-size: 1.2rem;
+                font-weight: bold;
+                border: 2px solid $txt-clr;
+            }
+            .location-container{
+                p{
+                    color: $txt-clr;
+
+                }
+                width: 100%;
+                .location{  
+                    margin-top: 15px;
+                select{
+                    width: 100%;
+                }
+                }
+            }
+            .delivery-info-content{
+                margin-top: 15px;
+                color: $txt-clr;
+                .delivery-info{
+                    padding: 4px 8px;
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 10px;
+                    .deliv{
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                    .deliv-fee{
+                        p:nth-child(2){
+                            margin-top: 5px;
+                        }
+                        margin-top: 5px;
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .checkout{
+            margin-top: 15px;
+            &-wrapper{
+                padding: 10px;
+                border-radius: 10px;
+                margin: 0 auto;
+                border: 2px solid $bg-footer;
+                .checkout-title{
+                    color: #000 ;
+                    font-size: 20px;
+                }
+                form{
+                    margin-top: 10px;
+                    .small{
+                        font-size: 13px;
+                        color: $txt-clr;
+                        margin-top: 5px;
+                    }
+                    .check-out-choice{
+                        display: flex;
+                        position: relative;
+                        .express{
+                           border-left: none !important; 
+                           left: 56px;
+                           top: 0;
+                           background-color: #ececec !important;
+                           position: absolute;
+                           z-index: -1;
+                        }
+                        .choice{
+                            padding: 5px 15px;
+                            background-color: #fff;
+                            border: 1px solid $bg-footer;
+                            border-radius: 5px;
+                        }
+                    }
+                  .promo-code-form{
+                    position: relative;
+                    margin-top: 15px;
+
+                    input{
+                    height: 39px;
+                    width: 78%;
+                    outline: none;
+                    border-radius: 10px;
+                    border: 1.5px solid rgba(99, 99, 99, 0.492);
+                    padding: 10px 55px 10px 15px;
+                    }
+                    button{
+                        position: absolute;
+                        top: 32%;
+                        transform: translateY(-50%);
+                        right: 1px;
+                        cursor: pointer;
+                        border-radius: 0 10px 10px 0;
+                        border: none;
+                        padding: 13px 30px;
+                    }
+                  }
+                }
+                .subtotal{
+                    margin-top: 15px;
+                    table{
+                      width: 100%;
+                      border-collapse: collapse;
+
+                      tr{
+                        th{
+
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        text-align: left;
+                       
+                        }
+
+                        
+                            td{
+                                font-size: 14px;
+                                color: $txt-clr;
+                                padding: 3px;
+                            }
+                        
+                      }
+                  }
+                }
+                .checkout-btn{
+                    width: 100%;
+                    border: none;
+                    padding: 10px 0;
+                    border-radius: 5px;
+                    background-color: $bg-clr;
+                    color: #fff;
+                    text-transform: uppercase;
+                    margin: 15px 0 5px 0;
+                }
+            }
+            .continue{
+                &-btn{
+                    width: 100%;
+                    border: none;
+                    padding: 10px 0;
+                    border-radius: 5px;
+                    border: 1.5px solid #e1e1e1;
+                    font-size: 16px;
+                    margin-bottom: 10px ;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+@use '../abstracts/' as *;
+
+// helpers
+.cta-btn{
+    .btn-lg{
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: $bg-clr;
+        padding: 15px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    
+}
+main{
+
+    .inner{
+        height: auto !important;
+        .deal-banner{
+            padding: 20px;
+            background-color: $bg-banner-clr;
+            p{
+                color: $txt-clr;
+                font-size: 18px;
+                font-family: "Helvetica Light", sans-serif;
+            }
+        }
+        .page-post{
+            
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+            
+           h1, p, ul li{
+                color: $txt-clr;
+            }
+
+            .page-post-img{
+                img{
+                    width: 417.5px;
+                    height: 489px;
+                }   
+            }
+            .brand{
+                display: flex;
+                justify-content: space-between;
+                margin: 15px 0;
+                span a{
+                    color: $bg-clr;
+                    text-decoration: none;
+                }
+                .rating{
+                    display: flex;
+                    gap:15px;
+                }
+            }
+            .meta-title{
+                margin-bottom: 15px;
+                border-bottom: 2px solid #ccc;
+            }
+            &-description{
+                .page-post-desc{
+                    p:nth-child(2){
+                        margin-top: 15px;
+                    }
+                }
+                .specs{
+                    margin:15px 0;
+                    p{
+                        margin-bottom: 15px;
+                    }
+                    ul{
+                        li{
+                            list-style: none;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+         
+            .social-cta{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .discount-badge{
+                    position: static;
+                    inset: 0;
+                    width: 40%;
+                }
+                .order-whatsapp{
+                    background-color: #26D367;
+                    padding: 15px 20px;
+                    border-radius: 5px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.pay-options{
+    margin: 15px 0;
+    .pay-text{
+        p{
+
+            color: $txt-clr;
+            font-size: 18px;
+
+        }
+        p:first-child{
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    }
+    .pay-pics{
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+        img{
+           width: 201.25px; 
+           height: 50px;
+        }
+    }
+}
+.recommendations{
+    .special-deal-wrapper{
+        .special-deal-post{
+            width: 201.25px; 
+            height: 245.64px;
+            &:hover .deal-content{
+                transform: translateY(-134px);
+            }
+            .deal-content{
+                height: 110px;
+            }
+            .special-content-img{
+         
+                img{
+                    width: 201.25px; 
+         
+                     }
+            } 
+        }
+    }
+}
+.related{
+    margin-top: 15px;
+    .item{
+
+        width: 229px !important;
+        height: 255.64px !important;
+     
+    }
+}

@@ -1,0 +1,120 @@
+@use '../abstracts/' as *;
+
+main{
+    .special{
+        margin-bottom: 15px;
+
+        &-left{
+            width: 100%;
+    max-width: 250px;
+        }
+        .hero-content-span{
+            width: 1130px;
+            
+            .deal-banner{
+                align-items: center;
+                background-color: #F4F4F4;
+                border-radius: 5px;
+
+                p:first-child{
+                    font-size: 26px;
+                    color: #585C5E;
+                    font-family: 'Helvetica Light', sans-serif;    
+                }
+            }
+            .options{
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                p{
+                    color: #9E9E9E;
+                }
+                select{
+                    background-color: white;
+                  padding: 15px;
+                  font-size: 15px;
+                  border: none;
+                  }
+                  option{
+                    color: yellow;
+                  }
+            }
+            .special-deal-wrapper{
+                .special-deal-post{
+                    width: 271px
+                }
+            }
+        }
+    }
+}
+.products-search{
+    margin-top: 15px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    p{
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .search-title{
+        border-bottom: 2px solid $bg-footer;
+    padding: 15px;
+
+    }
+    .search-container{
+        padding: 15px;
+        border-bottom: 2px solid $bg-footer;
+        
+        div{
+            margin: 10px 0 ;
+        }
+        .search-input{
+            padding: 9px 10px;
+            width: 210px;
+            margin-bottom: 10px;
+        }
+        .special-search{
+            font-size: 20px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+        }
+    }
+    .by-price{
+        padding: 15px;
+        border-bottom: 2px solid $bg-footer;
+        div{
+            margin: 10px 0 ;
+        }
+    }
+    .review{
+        p{
+            color: #000;
+        }
+        padding: 15px;
+        color: #686868;
+     
+        div{
+            margin: 15px 0 ;
+        }
+    }
+}
+
+.news-letter{
+    .cta-download{
+        width: 350px;
+
+
+        .cta{
+            display:flex;
+            gap: 20px;
+            a{
+                height: 50px;
+
+            }
+            img{
+                width: 165px;
+                height: 50px;
+            }
+        }
+    }
+}
