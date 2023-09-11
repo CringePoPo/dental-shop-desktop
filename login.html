@@ -12,12 +12,15 @@
             <div class="container">
                 <div class="top-header">
                 <div class="meta-info">
+                    <i class="fa fa-envelope" style="font-size: 20px;"></i> 
                     <p>info@example.com</p>
-                    <p>123 Abele street Madina Accra - Ghana</p>
+                    <i class="fa fa-map-marker" style="font-size: 20px;"></i> 
+                    <p>123 Abele street Madina
+                         Accra - Ghana</p>
                 </div>
                 <div class="cta-links">
                    <span>
-                    <i class="fa-solid fa-user" style="font-size: 20px;"></i> 
+                    <i class="fa-solid fa-user" style="font-size: 15px;"></i> 
                     <a href="login.html">Login</a>
                    </span> 
                     <a href="signup.html">Register</a>
@@ -28,8 +31,12 @@
     <div class="container">
 
         <div class="lower-header">
-            <div class="logo"><img src="./img/logo-social.png" alt="Logo"></div>
+            <div class="logo">
+                <a href="index.html">
 
+                    <img src="./img/logo-social.png" alt="Logo">
+                </a>
+            </div>
             <div class="working-hours">
                 <i class="fa-solid fa-headphones" style="font-size: 30px;"></i> 
                 <p class="date-time">Mon - Fri: 9AM -5PM <br>
@@ -55,8 +62,8 @@
         </div>
     </div>
     </header>
-
         <main class="login-main">
+            <div class="overlay"></div>
             <div class="login">
                 <div class="container">
                     <div class="login-wrapper">
@@ -77,11 +84,17 @@
                             
                                   </div> 
                             
-                                  <div class="inputBox"> 
-                            
-                                   <input type="password" required> <i>Password</i> 
-                            
-                                  </div> 
+                                
+                                  <div class="bigger-box log">
+
+                                    <div class="inputBox"> 
+                                        
+                                        <input type="password" id="password" required> <i>Password</i> 
+                                        
+                                    </div> 
+                                    <span><i class="fa fa-eye-slash toggle-view" id="togglePassword"></i></span> 
+  
+                                </div>
                             
                                   <div class="links">
                                       <div>
@@ -228,5 +241,10 @@
     src="https://kit.fontawesome.com/f15be79476.js"
     crossorigin="anonymous"
   ></script>
+  <script src="./js/jquery.min.js.download"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/owl.carousel.min.js.download"></script>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

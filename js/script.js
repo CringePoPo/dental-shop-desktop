@@ -68,3 +68,33 @@ const counts = Array.from(totalCounts).map(() => 0);
         }
     });
   });
+
+  // Collapsible code
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+
+    } 
+  });
+}
+
+// password toggling view
+  const togglePassword = document.getElementById("togglePassword")
+  const password = document.getElementById("password");
+  
+  function toggleView(){
+    const type = password.getAttribute("type") === "password" ? "text": "password";
+    password.setAttribute("type", type);
+
+    this.classList.toggle("fa-eye")
+  }
+  togglePassword.addEventListener("click", toggleView)
+  
+  
